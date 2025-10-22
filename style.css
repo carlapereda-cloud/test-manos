@@ -1,0 +1,33 @@
+body {
+    font-family: sans-serif;
+    background-color: #f0f0f0;
+    text-align: center;
+}
+
+.container {
+    /* Esto es un truco para poner el video y el dibujo uno encima del otro */
+    position: relative;
+    width: 640px;
+    height: 480px;
+    margin: 20px auto;
+    border: 5px solid #333;
+}
+
+video, canvas {
+    /* Hacemos que ambos ocupen el 100% del contenedor */
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+video {
+    /* Reflejamos el video para que funcione como un espejo */
+    transform: scaleX(-1);
+}
+
+canvas {
+    /* Nos aseguramos de que el dibujo quede por encima del video */
+    z-index: 10;
+}

@@ -1,0 +1,24 @@
+<!DOCTYPE html> 
+<html lang="es"> 
+<head> 
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <title>Test de MediaPipe</title> 
+    <link rel="stylesheet" href="style.css"> 
+</head> 
+<body> 
+
+    <h1>Test de Detección de Manos</h1> 
+    <p>¡Pon tu mano frente a la cámara!</p> 
+
+    <div class="container"> 
+        <video id="webcam" autoplay playsinline></video> 
+        <canvas id="lienzo" width="640" height="480"></canvas> 
+    </div> 
+
+    <script src="https://cdn.jsdelivr.net/npm/@mediapipe/tasks-vision/vision_bundle.js" crossorigin="anonymous"></script> 
+    
+    <script src="main.js" type="module"></script> 
+
+</body> 
+</html> 
